@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LidarPoCApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzV-lx-y5S">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </arscnView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uVw-oI-q7D">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RzV-lx-y5S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5PG-bj-QjG"/>
+                            <constraint firstItem="uVw-oI-q7D" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ADR-X0-fcK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uVw-oI-q7D" secondAttribute="trailing" id="Ml7-ol-tca"/>
+                            <constraint firstItem="RzV-lx-y5S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nO8-rn-dQj"/>
+                            <constraint firstItem="uVw-oI-q7D" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ngR-5z-Se8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RzV-lx-y5S" secondAttribute="trailing" id="orO-5N-GBc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RzV-lx-y5S" secondAttribute="bottom" id="whM-52-tOx"/>
+                            <constraint firstItem="uVw-oI-q7D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zSg-0V-Hlt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="depthImageView" destination="uVw-oI-q7D" id="aPb-RW-Zx7"/>
+                        <outlet property="sceneView" destination="RzV-lx-y5S" id="v9D-Ew-0Kv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49.618320610687022" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
